@@ -31,7 +31,7 @@ connection = pymysql.connect(host = 'localhost',user = 'root',passwd ='',db='fir
 cursor = connection.cursor()
 
 #data set to be read and training and testing of classifier is to be done...
-df = pd.read_csv('fft_data.csv')
+df = pd.read_csv('./DATASETS/fft_data.csv')
 #df = df.drop(['id'],axis=1)
 df = df[['mean','alpha','beta','delta','gamma','class']]
 
